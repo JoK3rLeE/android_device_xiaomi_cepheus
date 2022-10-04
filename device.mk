@@ -25,6 +25,8 @@ PRODUCT_PACKAGES += \
     qcom_decrypt \
     qcom_decrypt_fbe
 
+PRODUCT_SHIPPING_API_LEVEL := 30
+
 # platform
 PLATFORM_VERSION := 99.87.36
 PLATFORM_SECURITY_PATCH := 2099-12-31
@@ -40,7 +42,7 @@ PRODUCT_SOONG_NAMESPACES += \
 vendor/qcom/opensource/commonsys-intf/display
 
 # TWRP specific build flags
-TW_DEVICE_VERSION := FBEv2 Legacy (Dev)
+TW_DEVICE_VERSION := FBEv2 Legacy (WIP)
 TW_THEME := portrait_hdpi
 RECOVERY_SDCARD_ON_DATA := true
 TARGET_RECOVERY_QCOM_RTC_FIX := true
@@ -50,7 +52,6 @@ TW_INCLUDE_NTFS_3G := true
 TW_USE_TOOLBOX := true
 TW_INCLUDE_RESETPROP := true
 TW_INCLUDE_LIBRESETPROP := true
-TW_INCLUDE_REPACKTOOLS := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_BRIGHTNESS_PATH := "/sys/class/backlight/panel0-backlight/brightness"
 TW_MAX_BRIGHTNESS := 2047
@@ -62,9 +63,6 @@ TARGET_USES_LOGD := true
 TARGET_USES_MKE2FS := true
 TW_NO_SCREEN_BLANK := true
 TW_EXCLUDE_APEX := true
-
-# Spoofed Shipping API for FBEv2
-  PRODUCT_SHIPPING_API_LEVEL := 30
 
 # fscrypt policy
    TW_USE_FSCRYPT_POLICY := 2
