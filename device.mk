@@ -33,10 +33,16 @@ TARGET_SCREEN_HEIGHT := 2340
 TARGET_SCREEN_WIDTH := 1080
 
 # Camera
+$(call inherit-product-if-exists, vendor/xiaomi/miuicamera-cepheus/config.mk)
+TARGET_USES_MIUI_CAMERA := true
+
 PRODUCT_PACKAGES += \
     libMegviiFacepp-0.5.2 \
     libmegface \
     libpiex_shim
+
+$(call soong_config_set_bool,camera,override_format_from_reserved,true)
+$(call soong_config_set,camera,package_name,com.android.camera)
 
 # Init
 $(call soong_config_set,xiaomi_msmnile,variant_lib,//$(LOCAL_PATH):libvariant_xiaomi_cepheus)
