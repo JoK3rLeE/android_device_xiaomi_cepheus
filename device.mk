@@ -1,8 +1,17 @@
 #
-# Copyright (C) 2021 The LineageOS Project
+# Copyright (C) 2021-2022 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
+
+# ART / Dexpreopt
+PRODUCT_USES_DEFAULT_ART_CONFIG := true
+
+# Enable dexpreopt
+WITH_DEXPREOPT := true
+WITH_DEXPREOPT_DEBUG_INFO := false
+DEX_PREOPT_DEFAULT := speed-profile
+PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
 
 TARGET_HAS_IR := true
 TARGET_HAS_UDFPS := true
