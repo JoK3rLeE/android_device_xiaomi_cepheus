@@ -8,22 +8,18 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common infinity stuff.
-$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
+# Inherit some common Lineage stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit from cepheus device
 $(call inherit-product, device/xiaomi/cepheus/device.mk)
 
-# Infinity-X Specific Flags
-INFINITY_BUILD_TYPE := UNOFFICIAL
-INFINITY_MAINTAINER := "JoKeRLeE"
-TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_BUILD_APERTURE_CAMERA := false
 TARGET_HAS_UDFPS := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := infinity_cepheus
+PRODUCT_NAME := lineage_cepheus
 PRODUCT_DEVICE := cepheus
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Xiaomi
