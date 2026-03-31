@@ -19,6 +19,7 @@ TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_BUILD_APERTURE_CAMERA := false
 TARGET_HAS_UDFPS := true
 WITH_GMS := true
+WITH_GAPPS := true
 INFINITY_MAINTAINER := "JoKeRLeE"
 
 # Device identifier. This must come after all inclusions.
