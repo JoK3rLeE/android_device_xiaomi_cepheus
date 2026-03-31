@@ -21,11 +21,11 @@ blob_fixups: blob_fixups_user_type = {
         .regex_replace('.*seclabel u:r:batterysecret:s0\n', ''),
     'vendor/etc/sensors/hals.conf': blob_fixup()
         .add_line_if_missing('sensors.udfps.so'),
-    'vendor/lib/hw/audio.primary.msmnile.so': blob_fixup()
+    'vendor/lib/hw/audio.primary.cepheus.so': blob_fixup()
         .binary_regex_replace(
             b'/vendor/lib/liba2dpoffload.so',
             b'liba2dpoffload_cepheus.so\x00\x00\x00\x00',
-        )
+        ),
         .replace_needed('libaudioroute.so', 'libaudioroute-v34.so'),
     'vendor/lib/libaudioroute_ext.so': blob_fixup()
         .replace_needed('libaudioroute.so', 'libaudioroute-v34.so'),
