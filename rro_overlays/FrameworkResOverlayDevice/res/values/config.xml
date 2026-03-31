@@ -319,6 +319,7 @@
     <!-- Type of the double tap sensor. Empty if double tap is not supported. -->
     <string name="config_dozeDoubleTapSensorType" translatable="false"></string>
 
+    <!-- Whether to enable fp unlock when screen turns off on udfps devices -->
     <bool name="config_screen_off_udfps_enabled">true</bool>
 
     <!-- Screen brightness used to dim the screen while dozing in a very low power state.
@@ -348,5 +349,8 @@
 
     <!-- Defines the sysfs attribute path used by the device
          to enable/disable DC dimming. -->
-    <string name="config_deviceDcDimmingSysfsNode">/sys/devices/platform/soc/soc:qcom,dsi-display-primary/dc_dim</string>
+    <string name="config_deviceDcDimmingSysfsNode">/sys/devices/platform/soc/soc:qcom,dsi-display-primary/dimlayer_bl</string>
+
+    <!--Useful if you want to improve signal reception -->
+    <bool name="config_ignoreRssnrSignalLevel">true</bool>
 </resources>

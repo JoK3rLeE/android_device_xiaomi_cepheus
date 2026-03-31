@@ -6,6 +6,9 @@ persist.vendor.fingerprint.sensor_location=542|2007|87
 persist.vendor.fingerprint.type=udfps_optical
 persist.vendor.fingerprint.udfps.control_illumination=true
 
+# Sensors
+ro.vendor.sensors.xiaomi.udfps=true
+
 # Infinity X
 ro.product.marketname=Mi 9
 ro.infinity.soc=Snapdragon 855
