@@ -49,15 +49,12 @@ $(call soong_config_set,xiaomi_msmnile,variant_lib,//$(LOCAL_PATH):libvariant_xi
 
 # Overlays
 PRODUCT_PACKAGES += \
-    CarrierConfigOverlay \
     FrameworkResOverlayDevice \
     LineageSDKOverlayDevice \
     LineageSystemUIOverlayDevice \
     SettingsLibOverlayDevice \
     SettingsOverlayDevice \
-    SystemUIOverlayDevice \
-    TelephonyOverlay \
-    WifiOverlay
+    SystemUIOverlayDevice
 
 # Power
 PRODUCT_COPY_FILES += \
