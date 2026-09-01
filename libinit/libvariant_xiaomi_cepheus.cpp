@@ -14,7 +14,6 @@ static const variant_info cepheus_info = {
     .device = "cepheus",
     .marketname = "",
     .model = "Mi 9",
-    .build_fingerprint = "Xiaomi/cepheus/cepheus:11/RKQ1.200826.002/V12.5.1.0.RFAMIXM:user/release-keys",
 
     .nfc = true,
 };
