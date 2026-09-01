@@ -23,7 +23,6 @@ TARGET_SCREEN_DENSITY := 440
 TARGET_KERNEL_CONFIG += vendor/xiaomi/cepheus.config
 
 # Properties
-TARGET_SYSTEM_PROP += $(DEVICE_PATH)/configs/prop/system.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/configs/prop/vendor.prop
 
 # Reserve space for gapps install
