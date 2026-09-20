@@ -194,15 +194,6 @@
       "Type": "Property"
     },
     {
-      "Name": "SchedBoost",
-      "Path": "/proc/sys/kernel/sched_boost",
-      "Values": [
-        "1",
-        "0"
-      ],
-      "ResetOnInit": true
-    },
-    {
       "Name": "CpuLlccDdrBwMin",
       "Path": "/sys/class/devfreq/soc:qcom,cpu-llcc-ddr-bw/min_freq",
       "Values": [
@@ -216,8 +207,7 @@
         "3879",
         "5161",
         "5931",
-        "6881",
-        "7980"
+        "6881"
       ],
       "ResetOnInit": true
     },
@@ -231,8 +221,7 @@
         "7110",
         "9155",
         "12298",
-        "14236",
-        "15258"
+        "14236"
       ],
       "ResetOnInit": true
     },
@@ -301,12 +290,6 @@
       "Node": "GPUBusMinFreq",
       "Duration": 200,
       "Value": "3879"
-    },
-    {
-      "PowerHint": "INTERACTION",
-      "Node": "SchedBoost",
-      "Duration": 200,
-      "Value": "1"
     },
     {
       "PowerHint": "INTERACTION",
