@@ -42,6 +42,9 @@
     <!-- Show 5G toggle in internet dialog when available -->
     <bool name="config_supportsVONR">false</bool>
 
+    <!-- Whether show refresh rate QS tile -->
+    <bool name="config_showRefreshRateQsTile">true</bool>
+
     <!-- The CPU temperature divider, if needed -->
     <integer name="config_cpuTempDivider" translatable="false">1000</integer>
 </resources>
