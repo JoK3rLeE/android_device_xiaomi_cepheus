@@ -30,4 +30,5 @@ key 114   VOLUME_DOWN
 key 102   HOME
 key 528   FOCUS
 key 766   CAMERA
-key 689   VOICE_ASSIST
+# Xiaomi AI Key (Linux KEY_MACRO_RECORD_STOP, scan code 689)
+key 689   MACRO_1
