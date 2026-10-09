@@ -15,6 +15,7 @@ PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
 
 TARGET_HAS_IR := true
 TARGET_HAS_UDFPS := true
+TARGET_XIAOMI_AI_KEY := true
 TARGET_IS_LEGACY := true
 
 # Inherit from sm8150-common
@@ -56,10 +57,10 @@ PRODUCT_PACKAGES += \
     SettingsOverlayDevice \
     SystemUIOverlayDevice
 
-# GPIO keys 
+# GPIO keys
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/keylayout/gpio-keys.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/gpio-keys.kl
-    
+
 # Power
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/etc/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
