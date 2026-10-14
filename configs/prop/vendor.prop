@@ -13,3 +13,9 @@ ro.vendor.sensors.xiaomi.udfps=true
 ro.product.marketname=Mi 9
 ro.infinity.soc=Snapdragon 855
 ro.infinity.camera=48MP + 12MP + 16MP
+
+# Hack
+debug.hwui.renderer=skiavk
+debug.renderengine.vulkan=true
+debug.renderengine.backend=skiavkthreaded
+debuf.stagefright.renderengine.backend=threaded

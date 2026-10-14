@@ -45,9 +45,9 @@ $(call soong_config_set,camera,package_name,com.android.camera)
 # Init
 $(call soong_config_set,xiaomi_msmnile,variant_lib,//$(LOCAL_PATH):libvariant_xiaomi_cepheus)
 
-# NFC
+# Keylayout
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/nfc/libses-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libese-nxp.conf
+    $(LOCAL_PATH)/configs/keylayout/gpio-keys.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/gpio-keys.kl
 
 # Overlays
 PRODUCT_PACKAGES += \
