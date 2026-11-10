@@ -27,7 +27,7 @@ TARGET_SYSTEM_PROP += $(DEVICE_PATH)/configs/prop/system.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/configs/prop/vendor.prop
 
 # Reserve space for gapps install
-ifneq ($(WITH_GMS),true)
+ifeq ($(WITH_GAPPS), true)
 BOARD_SYSTEMIMAGE_EXTFS_INODE_COUNT := -1
 BOARD_SYSTEMIMAGE_PARTITION_RESERVED_SIZE := 104857600
 BOARD_SYSTEM_EXTIMAGE_EXTFS_INODE_COUNT := -1
